@@ -23,7 +23,7 @@ jobs:
         id: version
         uses: codacy/git-version@2.7.1
         with:
-          release-branch: main
+          release-branch: master
           minor-identifier: "feat:"
 
       - name: Install yq
