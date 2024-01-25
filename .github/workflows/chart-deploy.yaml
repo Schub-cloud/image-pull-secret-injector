@@ -19,27 +19,6 @@ jobs:
         with:
           version: v3.10.0
 
-      - name: Git Version
-        id: version
-        uses: codacy/git-version@2.7.1
-        with:
-          release-branch: master
-          minor-identifier: "feat:"
-
-      - name: Install yq
-        id: setup-yq
-        uses: shiipou/setup-yq-action@v2.2.0
-
-      - name: Updade Version
-        run: |
-          cd chart
-          yq -i ".version = \"${{ steps.version.outputs.version }}\"" Chart.yaml
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          git add Chart.yaml
-          git commit -m "AUTO: Bump Helm Chart version to ${{ steps.version.outputs.version }}"
-          git push
-
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.4.1
         env:
