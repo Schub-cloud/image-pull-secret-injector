@@ -1,9 +1,0 @@
-resources:
-- mutator.yaml
-- sa.yaml
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-images:
-- name: controller
-  newName: sapcc/pull-secret-injector
-  newTag: 0.3.0
