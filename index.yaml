@@ -3,6 +3,16 @@ entries:
   pull-secret-injector:
   - apiVersion: v2
     appVersion: 0.4.2
+    created: "2024-01-25T16:21:53.757280443Z"
+    description: A Helm chart for Kubernetes
+    digest: 8a8c00c1204ce4f0b5fcacf7198b410a21f7279e3152dc1a67adf7bab1240cce
+    name: pull-secret-injector
+    type: application
+    urls:
+    - https://github.com/Schub-cloud/image-pull-secret-injector/releases/download/pull-secret-injector-0.2.1/pull-secret-injector-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: 0.4.2
     created: "2024-01-25T16:11:09.879989897Z"
     description: A Helm chart for Kubernetes
     digest: b8afea009a5479d2b216c8dbdb58d43e93e1e1db91f41cccef0f01cdca7876a0
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://github.com/Schub-cloud/image-pull-secret-injector/releases/download/pull-secret-injector-0.1.1/pull-secret-injector-0.1.1.tgz
     version: 0.1.1
-generated: "2024-01-25T16:11:09.880004665Z"
+generated: "2024-01-25T16:21:53.757291944Z"
