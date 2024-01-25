@@ -32,7 +32,7 @@ jobs:
 
       - name: Updade Version
         run: |
-          cd global
+          cd chart
           yq -i ".version = \"${{ steps.version.outputs.version }}\"" Chart.yaml
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
