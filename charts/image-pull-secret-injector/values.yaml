@@ -10,6 +10,10 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: "0.4.1"
 
+clusterSecret:
+  enabled: false
+  namespaces: []
+
 imagePullSecret:
 
 serviceAccount:
@@ -45,4 +49,3 @@ resources:
    requests:
      cpu: 100m
      memory: 128Mi
-
